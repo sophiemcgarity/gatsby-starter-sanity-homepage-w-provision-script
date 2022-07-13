@@ -1,0 +1,30 @@
+{
+  "root": true,
+  "api": {
+    "dataset": "production",
+    "projectId": "j0zy5egz"
+  },
+  "project": {
+    "name": "test",
+    "studioHostname": "test"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool"
+  ],
+  "env": {
+    "production": {
+      "project": {
+        "basePath": "/__sanity"
+      }
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    }
+  ]
+}
